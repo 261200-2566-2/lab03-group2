@@ -1,15 +1,21 @@
 public class Shield {
-    String name;
-    double baseDefense;
-    boolean equip = true;
-    int lvl=0;
-    Shield(String name, double baseDefense){
+    public String name;
+    public double baseDefense;
+    public double shieldDefense;
+    public int lvl=0;
+    public Shield(String name, double baseDefense){
         this.name=name;
         this.baseDefense=baseDefense;
+        shieldDefense=baseDefense;
     }
-    void show(){
+    public void show(){
         System.out.println("name : "+name);
-        System.out.println("base defense : "+baseDefense);
+        System.out.println("defense : "+shieldDefense);
+        System.out.println("level :"+lvl);
+    }
+    public void levelUp(){
+        lvl++;
+        shieldDefense = baseDefense*(1+0.05*lvl);
     }
 
 }
