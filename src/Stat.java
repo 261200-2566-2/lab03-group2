@@ -8,7 +8,7 @@ public class Stat {
     int level=0;
 
     public Stat(double damage,double def,double runSpeed){
-        maxHp=100;
+        maxHp=1000;
         maxMana=50;
         this.def=def;
         this.damage=damage;
