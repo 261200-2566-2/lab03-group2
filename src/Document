@@ -1,0 +1,19 @@
+1)design and implement a class for an RPG character
+think about
+1.how and where to store data
+   name  level maxHP maxMana baseRunSpeed runSpeed sword shield are all in Stat
+
+    lvl,baseDamage, swordDamage,name  is in Sword
+    lvl, baseDefense , shieldDefense,name,equip is in Shield
+
+2.what operations are needed
+    initiate , lvlUp , show , attack ,equipItem , unequipItem are in Stat
+
+    initiate , showStat , lvlUp are in Sword and Shield.
+
+3.how and where to compute information
+    compute swordDamage and sword lvl in class sword
+    compute shieldDamage and shield lvl in class shield
+
+    compute runSpeed maxHP maxMana in Stat
+
