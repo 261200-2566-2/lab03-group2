@@ -1,0 +1,12 @@
+1)design and implement a class for an RPG character
+think about
+1.how and where to store data
+    level maxHP maxMana swordDamage shieldDefense baseRunSpeed maxRunSpeed  are all in Stat
+
+    swordDamage,name,equip is in Sword
+    shieldDefense,name,equip is in Shield
+
+2.what operations are needed
+    initiate , lvlUp , show , attck ,equipItem , unequipItem ,swordRunSpeedDecrease , ShieldRunSpeedDecrease
+
+    showStat is in Sword and Shield.
