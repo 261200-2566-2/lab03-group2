@@ -1,17 +1,22 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
+
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        Stat wayu=new Stat(10,10,10);
+        Stat non=new Stat(5,5,5);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        wayu.equipSheild();
+        wayu.equipSword();
+        wayu.show();
+        non.attack(wayu);
+        wayu.show();
+        non.levelUp();
+        non.levelUp();
+        non.levelUp();
+        non.levelUp();
+        non.attack(wayu);
+        wayu.show();
+        non.show();
     }
 }
